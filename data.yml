@@ -1,0 +1,4 @@
+break: 'STONE:10;GOLD_BLOCK:20'
+build: 'STONE:10;GOLD_BLOCK:20'
+player-kill: 10
+mob-kill: 100

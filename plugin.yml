@@ -1,0 +1,7 @@
+name: BetterSkyblock
+version: 2.0
+author: KeoDeoVN
+main: kdvn.sky.advancedore.main.Main
+commands:
+    bs:
+        description: Only for reloading!

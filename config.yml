@@ -1,0 +1,45 @@
+﻿materials:
+# List Material
+  WATER: 'WATER,STATIONARY_WATER'
+  LAVA: 'LAVA,STATIONARY_LAVA'
+  FENCE: 'FENCE,SPRUCE_FENCE,BIRCH_FENCE,JUNGLE_FENCE,ACACIA_FENCE'
+# Note: Material 1 is solution
+# Example: material1: WATER - material2: FENCE => TRUE
+#          material1: FENCE - material2: WATER => FALSE
+material1: WATER
+material2: WATER
+disabled-worlds:
+- 'world_the_end'
+
+# Note: Name rule: custom1, custom2, custom3,...
+ores:
+  default:
+    blocks:
+    - 'STONE:50.0'
+    - 'IRON_ORE:40.0'
+    permission: ''
+  custom1:
+    blocks:
+    - 'STONE:10.0'
+    - 'IRON_ORE:50.0'
+    permission: 'custom1.vip'
+prefix-options:
+  on-chat: true
+# Reqire plugin: PlaceholderAPI. Placeholder: bs_rank_prefix
+  placeholder: true
+player-ranks:
+  default:
+# Requirement Types: BLOCK_BREAK, BLOCK_BUILD, MOB_KILL, PLAYER_KILL
+    requirements: 
+    prefix: '&7[&9Rank 1]'
+    rank-up-cmds: []
+  custom1:
+# BLOCK = ALL OF BLOCK TYPES
+    requirements:
+      BLOCK_BREAK: 'DIAMOND_BLOCK:11'
+      BLOCK_BUILD: 'DIAMOND_BLOCK:330;STONE:290'
+      MOB_KILL: '293'
+    prefix: '&7[&9Rank 2]'
+    rank-up-cmds:
+    - 'bc Thằng {player} lên rank 2 rồi đó'
+    - 'pex user {player} add custom1.vip'
